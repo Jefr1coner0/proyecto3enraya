@@ -11,4 +11,5 @@
         <maven.compiler.target>20</maven.compiler.target>
         <exec.mainClass>com.mycompany.enraya.App</exec.mainClass>
     </properties>
+    <name>3enRaya</name>
 </project>
