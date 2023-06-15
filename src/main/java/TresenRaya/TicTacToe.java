@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package TresenRaya;
-
 import java.awt.Color;
 import javax.swing.JLabel;
 
@@ -30,8 +29,7 @@ public class TicTacToe extends javax.swing.JFrame {
     
     public TicTacToe() {
         initComponents();
-       
-        this.setLocationRelativeTo(null);
+this.setLocationRelativeTo(null);           
         lbs[0]=jLabel1;
         lbs[1]=jLabel2;
         lbs[2]=jLabel3;
@@ -42,7 +40,9 @@ public class TicTacToe extends javax.swing.JFrame {
         lbs[7]=jLabel8;
         lbs[8]=jLabel9;
         
-    }
+    
+}
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -70,12 +70,12 @@ public class TicTacToe extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jLabel13 = new javax.swing.JLabel();
         lbpuntajeo = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         lbpuntajex = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
         lbturno = new javax.swing.JLabel();
 
@@ -277,6 +277,23 @@ public class TicTacToe extends javax.swing.JFrame {
             }
         });
 
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("0=");
+
+        lbpuntajeo.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lbpuntajeo.setForeground(new java.awt.Color(255, 255, 255));
+        lbpuntajeo.setText("0");
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("x=");
+
+        lbpuntajex.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lbpuntajex.setForeground(new java.awt.Color(255, 255, 255));
+        lbpuntajex.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbpuntajex.setText("0");
+
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -310,23 +327,6 @@ public class TicTacToe extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(5).setMaxWidth(90);
         }
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("0=");
-
-        lbpuntajeo.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        lbpuntajeo.setForeground(new java.awt.Color(255, 255, 255));
-        lbpuntajeo.setText("0");
-
-        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("x=");
-
-        lbpuntajex.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        lbpuntajex.setForeground(new java.awt.Color(255, 255, 255));
-        lbpuntajex.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbpuntajex.setText("0");
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -359,8 +359,8 @@ public class TicTacToe extends javax.swing.JFrame {
                         .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
                         .addComponent(lbpuntajex)
                         .addComponent(lbpuntajeo)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
